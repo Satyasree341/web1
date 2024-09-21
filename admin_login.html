@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - Student Feedback System</title>
+    <style>
+        /* Body styles */
+        body {
+            background-image: url('satya.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container for the form */
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Heading styles */
+        h1 {
+            background-color: rgba(7, 189, 230, 0.8); /* Semi-transparent blue */
+            padding: 15px;
+            border-radius: 5px;
+            margin: 0 0 20px 0;
+        }
+
+        /* Input field styles */
+        input[type="text"], input[type="password"] {
+            width: 90%; /* Make input fields responsive */
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button styles */
+        input[type="submit"] {
+            background-color: rgb(7, 189, 230);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Button hover effect */
+        input[type="submit"]:hover {
+            background-color: rgba(7, 189, 230, 0.8);
+        }
+
+        /* Link styles */
+        a {
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Admin Login</h1>
+        <form action="student_feedback.html" method="POST">
+
+
+            <p>
+                <label for="admin_username">Username:</label><br>
+                <input type="text" id="admin_username" name="admin_username" required>
+            </p>
+
+            <p>
+                <label for="admin_password">Password:</label><br>
+                <input type="password" id="admin_password" name="admin_password" required>
+            </p>
+
+            <p>
+                <input type="submit" value="Login">
+            </p>
+        </form>
+        <p><a href="index.html">Back to Home</a></p>
+    </div>
+</body>
+</html>

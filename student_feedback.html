@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('satya.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #333;
+        }
+
+        h1 {
+            background-color: rgba(51, 13, 14, 0.9);
+            padding: 50px;
+            color: white;
+            margin-bottom: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            margin: auto;
+            padding: 30px;
+            width: 60%;
+            position: relative;
+            top: 10%;
+            backdrop-filter: blur(10px);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 15px;
+            font-size: 18px;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus, select:focus {
+            border-color: #04baf7;
+            box-shadow: 0 0 5px rgba(4, 186, 247, 0.5);
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #04baf7;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #028dc1;
+            transform: scale(1.05);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        textarea {
+            resize: none;
+            border-radius: 8px;
+        }
+
+        .rating-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .rating-container input {
+            margin-right: 5px;
+        }
+
+        .recommend-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .recommend-container input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <h1>Student Feedback Form</h1>
+
+        <div class="container">
+            <form action="successful.html" method="POST">
+                <h2>Personal Information</h2>
+
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" placeholder="Enter your full name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="rollno">Roll Number:</label></td>
+                        <td><input type="text" id="rollno" name="rollno" placeholder="Enter your roll number" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Enter your email address" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="course">Course:</label></td>
+                        <td><input type="text" id="course" name="course" placeholder="Enter your course name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="faculty">Faculty:</label></td>
+                        <td><input type="text" id="faculty" name="faculty" placeholder="Enter faculty name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="department">Department:</label></td>
+                        <td>
+                            <select id="department" name="department" required>
+                                <option value="">Select Department</option>
+                                <option value="Computer Science">Computer Science</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Mechanical">Mechanical</option>
+                                <option value="Civil">Civil</option>
+                                <option value="Business Administration">Business Administration</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="feedback">Feedback:</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea id="feedback" name="feedback" rows="4" placeholder="Enter your feedback" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="suggestions">Suggestions:</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea id="suggestions" name="suggestions" rows="3" placeholder="Enter your suggestions"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label>Rate the Course:</label></td>
+                    </tr>
+                    <tr class="rating-container">
+                        <td>
+                            <input type="radio" id="rating1" name="rating" value="1">
+                            <label for="rating1">1</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="rating2" name="rating" value="2">
+                            <label for="rating2">2</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="rating3" name="rating" value="3">
+                            <label for="rating3">3</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="rating4" name="rating" value="4">
+                            <label for="rating4">4</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="rating5" name="rating" value="5">
+                            <label for="rating5">5</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label>Would you recommend this course to others?</label></td>
+                    </tr>
+                    <tr class="recommend-container">
+                        <td colspan="2">
+                            <input type="radio" id="recommend_yes" name="recommend" value="Yes" required>
+                            <label for="recommend_yes">Yes</label>
+                            <input type="radio" id="recommend_no" name="recommend" value="No">
+                            <label for="recommend_no">No</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><input type="submit" value="Submit Feedback"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+
+</body>
+</html>

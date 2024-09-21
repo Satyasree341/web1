@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback System</title>
+    <style>
+        /* Gradient background */
+        body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Container for login links */
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Navigation menu styling */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        /* Change the link color on hover */
+        li a:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Header styling */
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1 {
+            background-color: rgba(7, 182, 230, 0.9);
+            padding: 15px;
+            margin: 0;
+            border-radius: 5px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer h2 {
+            margin: 0;
+            color: #ffcc00;
+        }
+
+        footer p {
+            margin-top: 10px;
+            padding: 0 20px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #ffcc00; /* Yellow color for highlights */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Heading -->
+    <h1>Welcome to the Student Feedback System</h1>
+
+    <p align="center"><b>This system allows students to submit feedback on courses and faculty, and provides staff and administrators access to feedback reports.</b></p>
+
+    <br><br><br>
+
+    <!-- Transparent login container -->
+    <div class="login-container">
+        <nav>
+            <ul>
+                <li><a href="admin_login.html">Admin Login (Chairman & Principal)</a></li>
+                <li><a href="student_feedback.html">Student Feedback</a></li>
+                <li><a href="register.html">Registration Form</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <br><br><br><br>
+
+    <!-- Footer -->
+    <footer>
+        <marquee behavior="scroll" direction="left" scrollamount="20px">
+            <h2>About the System</h2>
+        </marquee>
+        <p class="highlight">
+            The Student Feedback System is designed to collect feedback from students on various courses and faculty members. Based on the feedback, 
+            reports are generated that help faculty members improve their teaching and help administrators assess overall course performance. 
+            The system is divided into three main sections:
+        </p>
+    </footer>
+</body>
+</html>
